@@ -288,7 +288,8 @@
             const btn = this;
             const originalText = btn.textContent;
             
-            btn.textContent = '下载中...';
+            btn.textContent = '下载失败';
+            return;
             btn.style.backgroundColor = '#999';
             btn.style.cursor = 'not-allowed';
             
@@ -314,4 +315,5 @@
         });
     </script>
 </body>
+
 </html>
