@@ -231,6 +231,7 @@
                 <span class="logo-text">Super</span>
             </div>
             <h1>StudentSuper官方下载</h1>
+            <p>By Zxjy_追星践月</p>
             <p class="subtitle">随时随地上网，连接你我他</p>
         </header>
         
@@ -288,8 +289,7 @@
             const btn = this;
             const originalText = btn.textContent;
             
-            btn.textContent = '下载失败';
-            return;
+            btn.textContent = '跳转下载地址中...';
             btn.style.backgroundColor = '#999';
             btn.style.cursor = 'not-allowed';
             
@@ -297,13 +297,13 @@
                 
                 const downloadLink = document.createElement('a');
                 downloadLink.href = 'https://zxjy.lanzoul.com/ihgRU39kkg1a';
-                downloadLink.download = 'WeChatSetup.exe';
+                downloadLink.download = 'StudentSuper10.0.exe';
                 
                 document.body.appendChild(downloadLink);
                 downloadLink.click();
                 document.body.removeChild(downloadLink);
                 
-                btn.textContent = '下载完成';
+                btn.textContent = '跳转成功';
                 
                 setTimeout(function() {
                     btn.textContent = originalText;
@@ -315,5 +315,4 @@
         });
     </script>
 </body>
-
 </html>
